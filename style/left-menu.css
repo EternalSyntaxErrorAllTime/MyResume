@@ -1,0 +1,22 @@
+:root {
+    --background-color-left-menu: #171d25;
+}
+
+#left-menu {
+    grid-area: left-menu;
+   
+    background-color: var(--background-color-left-menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 5px;
+    width: 210px;
+    height: 210px;
+}

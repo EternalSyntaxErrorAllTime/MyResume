@@ -1,0 +1,70 @@
+:root {
+    --background-color-right-menu: #23272f;
+    --color-text-right-menu: #ffffff;
+    --font-famili-right-menu: Inter;
+}
+
+#right-menu {
+    color: var(--color-text-right-menu);
+    font-family: var(--font-famili-right-menu);
+    background-color: var(--background-color-right-menu);
+
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+
+    grid-area: right-menu;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    
+    .container-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .container-col {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p, li{
+        font-size: 25px;
+    }
+
+    li {
+        text-indent: -1.5em;
+        padding-left: 1.5em;
+    }
+}
+
+.main-personal-information {
+    grid-area: main-personal-information;
+}
+
+.education {
+    grid-area: education;
+}
+
+.about-myself {
+    grid-area: about-myself;
+}
+
+.personal-qualities {
+    grid-area: personal-qualities;
+}

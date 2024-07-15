@@ -1,0 +1,8 @@
+body {
+    background-color: #1c8b6a;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "left-menu right-menu";
+    width: 100%;
+}   

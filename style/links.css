@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a:before {
+    position: absolute;
+    right: 0px;
+    bottom: -8px;
+    content: " ";
+    border-bottom: 2.5px solid #e20000;
+    
+    border-radius: 20px;
+    transform: scale(0,3);
+    width: 100%;
+    transition: transform 0.4s
+}
+
+a:hover:before {
+    transform: scale(1,1);
+}
