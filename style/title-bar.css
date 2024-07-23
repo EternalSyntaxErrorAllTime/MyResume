@@ -2,16 +2,19 @@
     --color-text-title: rgb(255, 255, 255);
     --font-family-title: Inter;
     --background-element-title-bar: #000000;
+    --title-bar-width: 74px;
+    --title-bar-height: 64px;
 }
 
 .title-bar {
-    display: inline-grid;
-    grid-template-columns: 74px 1000px;
-    grid-template-rows: 64px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: var(--title-bar-width) 1fr;
+    grid-template-rows: var(--title-bar-height) 10px;
     grid-template-areas:
     "cube text"
     "cube line";
-
+    
     .cube {
         box-sizing: border-box;
         padding: 10px;
@@ -25,15 +28,14 @@
         }
     }
     
-    .text {
+    h2 {
+        grid-area: text;
         box-sizing: border-box;
         padding-left: 10px;
         margin: auto 0;
-        grid-area: text;
         
         font-family: var(--font-family-title);
         color: var(--color-text-title);
-        font-size: 32px;
     }
     
     .line {

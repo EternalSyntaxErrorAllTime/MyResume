@@ -1,5 +1,267 @@
-@media (max-width: 390px) {
-    #left-menu {
-        background-color: red;
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 40px;
     }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    p, li {
+        font-size: 20px;
+    }
+    :root {
+        --width-left-menu: 350px;
+        --width-bookmark: 330px;
+        --title-bar-width: 68px;
+        --title-bar-height: 58px;
+    }
+    #right-menu {
+        gap: 40px;
+
+        .spacer {
+            padding-right: 60px;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+
+    span, a {
+        font-size: 20px;
+    }
+    
+
+    :root {
+        --width-left-menu: 300px;
+        --width-bookmark: 280px;
+        
+        --title-bar-width: 60px;
+        --title-bar-height: 50px;
+    }
+    #right-menu {
+        gap: 30px;
+
+        .spacer {
+            padding-right: 40px;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px)
+{
+    :root {
+        --width-left-menu: 250px;
+        --width-bookmark: 230px;
+        --height-bookmark: 55px;
+        
+        --title-bar-width: 54px;
+        --title-bar-height: 44px;
+    }
+
+    #avatar {
+        width: 190px;
+        height: 190px;
+    }
+
+    #right-menu .spacer {
+            padding-right: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    p li {
+        font-size: 15px;
+    }
+}
+    
+@media (max-width: 768px) {
+    body {    
+        grid-template-columns: auto;
+        grid-template-rows: auto 40px auto;
+        grid-template-areas:
+        "left-menu"
+        "color-insert-mob"
+        "right-menu";
+    }   
+    #left-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+
+        .main-personal-information {
+            display: flex;
+        }
+
+        .bookmark {
+            display: none;
+        }
+        
+        .list-info {
+            display: none;
+        }
+    }
+    
+    #avatar {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 220px;
+        height: 220px;
+    }
+    
+    #right-menu {
+        padding-top: 20px;
+        padding-left: 15px;
+        gap: 50px;
+
+        .main-personal-information {
+            display: none;
+        }
+    
+        .mob-display {
+            display: flex;
+        }
+
+        .spacer {
+            padding-right: 15px;
+        }
+    }
+
+    #color-insert-mob {
+        display: block;
+    }
+}
+
+@media (max-width: 680px) {
+    :root {
+        --title-bar-width: 50px;
+        --title-bar-height: 40px;
+    }
+
+    .item-list {
+        height: 40px;
+    }
+
+    #right-menu {
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p, li, a, span {
+        font-size: 16px;
+    }
+
+    #avatar {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 570px) {
+    :root {
+        --element-info-icon: 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 17px;
+    }
+    
+    p, li, a, span {
+        font-size: 15px;
+    }
+    #left-menu {
+        gap: 15px;
+    }
+    #right-menu {
+        gap: 20px;
+    }
+
+
+    #avatar {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    :root {
+        --title-bar-width: 45px;
+        --title-bar-height: 35px;
+        --element-info-icon: 20px;
+    }
+
+    #avatar {
+        width: 135px;
+        height: 135px;
+    }
+    .item-list {
+        height: 28px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    p, li, a, span {
+        font-size: 13px;
+    }
+    #avatar {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 383px) {
+    :root {
+        --title-bar-width: 35px;
+        --title-bar-height: 25px;
+        --element-info-icon: 15px;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 13px;
+    }
+    
+    p, li, a, span {
+        font-size: 11px;
+    }
+    #avatar {
+        width: 110px;
+        height: 110px;
+    }
+    .item-list {
+        height: 23px;
+    }
+
 }

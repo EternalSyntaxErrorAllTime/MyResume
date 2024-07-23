@@ -3,37 +3,39 @@
     --color-text-bookmark: rgb(255, 255, 255);
     --font-family-text-bookmark: Inter;
     --width-bookmark: 380px;
+    --height-bookmark: 65px;
 }
 
 .bookmark {
+    display: block;
     position: relative;
     display: grid;
-    grid-template-rows: 65px 30px;
+    grid-template-rows: var(--height-bookmark) 30px;
     grid-template-columns: var(--width-bookmark) 30px;
     grid-template-areas: 
     "main-line main-line" 
     "empty corner";
     left: 25px;
-}
-
-.bookmark-line {
-    grid-area: main-line;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 0px 10px 0px 0px;
-    background: var(--color-bookmark);
     
-    color: var(--color-text-bookmark);
-    font-family: var(--font-family-text-bookmark);
-    font-size: 32px;
-    box-sizing: border-box;
-    padding-left: 10px;
-}
+    .bookmark-line {
+        grid-area: main-line;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0px 10px 0px 0px;
+        background: var(--color-bookmark);
+        
+        color: var(--color-text-bookmark);
+        font-family: var(--font-family-text-bookmark);
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    
+    .bookmark-corner {
+        grid-area: corner;
+        clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+        box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+        background: var(--color-bookmark);
+    }
 
-.bookmark-corner {
-    grid-area: corner;
-    clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
-    box-shadow: inset 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
-    background: var(--color-bookmark);
 }

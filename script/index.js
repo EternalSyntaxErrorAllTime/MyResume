@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let dom_age = document.getElementById("age");
+    let dom_element_age = document.getElementsByClassName("age");
     const DATE_BIRTHS = new Date("2004/01/29"); 
     let age = CurrentAge(DATE_BIRTHS);
-    dom_age.innerText = `${age} ${GetAgeSuffix(age)}`;
+    
+    Object.keys(dom_element_age).forEach(index_element => {
+        dom_element_age[index_element].innerText = `${age} ${GetAgeSuffix(age)}`;
+    }) 
+
+
 });
 
 

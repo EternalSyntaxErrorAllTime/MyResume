@@ -1,0 +1,6 @@
+#color-insert-mob {
+    grid-area: color-insert-mob;
+    display: none;
+    width: 100%;
+    background-color: var(--color-bookmark);
+}
