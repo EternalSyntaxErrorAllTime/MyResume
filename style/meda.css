@@ -206,6 +206,12 @@
         width: 150px;
         height: 150px;
     }
+    .item-list {
+        gap: 10px;
+    }
+    .element-info p {
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -237,6 +243,12 @@
         width: 130px;
         height: 130px;
     }
+    .item-list {
+        gap: 5px;
+    }
+    .element-info p {
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 383px) {
@@ -262,6 +274,24 @@
     }
     .item-list {
         height: 23px;
+        gap: 0px;
     }
+    .element-info p {
+        padding-left: 5px;
+    }
+}
 
+
+@media (max-width: 330px) {
+    :root {
+        --title-bar-width: 32px;
+        --title-bar-height: 22px;
+    }
+    .item-list {
+        height: 20px;
+    }
+    #avatar {
+        width: 120px;
+        height: 120px;
+    }
 }
